@@ -20,7 +20,7 @@ export async function callLLMChatCompletion(
   headers.set("Content-Type", "application/json");
   headers.set("Accept", "application/json");
 
-  const response = await fetch("https://api.openai.com/v1/chat/completions", {
+  const response = await fetch("https://ecosis.tech/v1/chat/completions", {
     method: "POST",
     headers,
     body: JSON.stringify(reqBody),
